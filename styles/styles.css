@@ -505,6 +505,7 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 70px;
 }
 header .headerImgContainer {
   width: 45%;
@@ -563,4 +564,26 @@ header .headerContentContainer {
 }
 .categoryGallery .itemFour {
   background: #fff5f5;
+}
+
+@media (max-width: 1000px) {
+  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+  header .headerContentContainer {
+    padding: 0 50px;
+  }
+  header h3 {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 800px) {
+  /* all of our styles for TABLET devices will go within this breakpoint */
+  header .headerImgContainer {
+    width: 100%;
+  }
+  header .headerContentContainer {
+    width: 65%;
+  }
+}
+@media (max-width: 500px) {
+  /* all of our styles for MOBILE devices will go within this breakpoint */
 }
